@@ -1,0 +1,11 @@
+body {
+    background-color: #c0c0c0;
+    font-family: candara;
+}
+
+ul li a {
+    color: #010101;
+}
+ul li a:hover {
+    color: #5300cf;
+}
