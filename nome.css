@@ -1,11 +1,34 @@
 body {
     background-color: #c0c0c0;
     font-family: candara;
+    margin: 0em;
 }
 
+ul {
+    margin: 0.5em 0em 1em;
+    padding: 0em;
+    text-align: center;
+}
+ul li {
+    display: inline;
+}
 ul li a {
     color: #010101;
+    display: inline-block;
+    padding: 0em 1em;
+    text-decoration: none;
 }
-ul li a:hover {
-    color: #5300cf;
+ul li a.active, ul li a:hover {
+    color: #5900de;
+}
+
+#body {
+    background-color: #404040;
+    border-radius: 1em;
+    box-shadow: 0em 0.125em 0.5em 0 #404040;
+    margin: 0em 3em;
+}
+#content {
+    color: #c0c0c0;
+    padding: 1em 1em;
 }

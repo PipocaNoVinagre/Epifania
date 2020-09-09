@@ -1,49 +1,61 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 	<head>
-		<link rel="icon" type="image/x-icon" href="favicon.svg">
-		<title>Hummm...</title>
+		<link rel="icon" type="image/x-icon" href="svg/favicon.svg">
+
+		<!-- To add CSS -->
+		<link rel="stylesheet" type="text/css" href="nome.css">
 
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-		<!-- To add Bootstrap CSS -->
-		<link rel="stylesheet" 
-					href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
-					integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" 
-					crossorigin="anonymous">
-		<link rel="stylesheet" type="text/css" href="nome.css">
+		<title>Hummm...</title>
 	</head>
 	<body>
-		<ul class="nav justify-content-center" id="menu-principal">
-			<li class="nav-item">
-				<a class="nav-link" href="#">Início</a>
+		<ul id="menu">
+			<li>
+				<a class="btn active" href="#" id="start-tab">Início</a>
 			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#">Personas</a>
+			<li>
+				<a class="btn" href="#" id="personas-tab">Personas</a>
 			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#">Lugares</a>
+			<li>
+				<a class="btn" href="#" id="regions-tab">Lugares</a>
 			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#">Itens</a>
+			<li>
+				<a class="btn" href="#" id="itens-tab">Itens</a>
 			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#">Histórias</a>
+			<li>
+				<a class="btn" href="#" id="stories-tab">Histórias</a>
 			</li>
 		</ul>
 
-		<script language="javascript" type="text/javascript" src="sample.js"></script>
+		<div id="body">
+			<div id="content">
+				<canvas style="display:block;margin:0 auto;" id="canvas">
+					Infelizmente, este browser não suporta Canvas. :(
+				</canvas>
+				<script language="javascript" type="text/javascript" src="javascript/homePage.js"></script>
+			</div>
+		</div>
 
-		<!-- To add Bootstrap -->
-		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
-						integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" 
-						crossorigin="anonymous"></script>
-		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" 
-						integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" 
-						crossorigin="anonymous"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" 
-						integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" 
-						crossorigin="anonymous"></script>
+		<div id="start-tab-text" style="display:none;">
+			Oba meu parcero, suave? Aqui é a aba do Início.
+		</div>
+		<div id="personas-tab-text" style="display:none;">
+			Olá, aqui é a das Personas (jeito chique de dizer "uns menino e umas moça").
+		</div>
+		<div id="regions-tab-text" style="display:none;">
+			E aqui são os lugares.
+		</div>
+		<div id="itens-tab-text" style="display:none;">
+			Itens que fizeram e fazem História nesse mundo.
+		</div>
+		<div id="stories-tab-text" style="display:none;">
+			As crônicas que saltam de boca em boca e afinam a criatividade dos ouvintes.
+		</div>
+
+		<!-- To add Javascript -->
+		<script language="javascript" type="text/javascript" src="javascript/sample.js"></script>
 	</body>
 </html>
