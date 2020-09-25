@@ -71,6 +71,7 @@ const stickMan = {
 	man7: new Image(),
 	man8: new Image(),
 	man9: new Image(),
+	loaded: false,
 	sizeX: canvas.width,
 	sizeY: canvas.height,
 	positionX: 0,
@@ -111,6 +112,7 @@ const stickMan = {
 			}
 			this.duskCount = 0;
 		}
+		this.loaded = true;
 	}
 };
 
@@ -135,11 +137,13 @@ function draw() {
 	flakes.draw();
 	stickMan.update();
 
-	ctx.drawImage(stickMan.main, stickMan.positionX, stickMan.positionY, stickMan.sizeX, stickMan.sizeY);
+	if (stickMan.loaded) {
+		ctx.drawImage(stickMan.main, stickMan.positionX, stickMan.positionY, stickMan.sizeX, stickMan.sizeY);
+	}
 
 	counting += 1;
 	window.requestAnimationFrame(draw);
 }
 
 // Aqui começa.
-draw();
+window.onload = draw();

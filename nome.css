@@ -1,7 +1,21 @@
 body {
     background-color: #c0c0c0;
+    color: #c0c0c0;
     font-family: candara;
     margin: 0em;
+}
+
+::-webkit-scrollbar {
+    width: 0.75em;
+}
+::-webkit-scrollbar-track {
+    background: #c0c0c0;
+}
+::-webkit-scrollbar-thumb {
+    background: #707070;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #404040;
 }
 
 ul {
@@ -18,17 +32,37 @@ ul li a {
     padding: 0em 1em;
     text-decoration: none;
 }
-ul li a.active, ul li a:hover {
+ul li a:hover {
     color: #5900de;
+}
+ul li a.active {
+    color: #5900de;
+    text-decoration: underline;
 }
 
 #body {
     background-color: #404040;
     border-radius: 1em;
     box-shadow: 0em 0.125em 0.5em 0 #404040;
-    margin: 0em 3em;
+    margin: 0em 5% 2em;
 }
 #content {
+    padding: 1em 2%;
+}
+#footer {
+    background-color: #404040;
+    box-shadow: 0em -5px 5px 5px #404040;
+}
+
+hr {
+    height: 2px;
+    border-width: 0px;
+    background-color: #707070;
+}
+
+.hyperlink {
     color: #c0c0c0;
-    padding: 1em 1em;
+}
+.hyperlink:hover {
+    color: #ded600;
 }
